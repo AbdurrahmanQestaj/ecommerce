@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <title>Katalogu i laptopëve - NovaLaptops</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+<body class="page-produktet">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="NovaLaptops logo">
+        <span>NovaLaptops</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Ballina</a>
+        <a href="produktet.html" class="active">Laptopët</a>
+        <a href="sherbimet.html">Shërbimet</a>
+        <a href="rreth-nesh.html">Rreth nesh</a>
+        <a href="kontakti.html">Kontakti</a>
+      </nav>
+      <button id="cart-toggle" class="cart-btn" type="button">
+        🛒 <span id="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <aside id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+      <h2>Shporta juaj</h2>
+      <button id="cart-close" type="button">×</button>
+    </div>
+    <div id="cart-items" class="cart-items">
+      <p class="cart-empty">Shporta është bosh për momentin.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total-line">
+        <span>Totali:</span>
+        <span id="cart-total">0 €</span>
+      </div>
+      <button id="checkout-btn" type="button" class="btn-primary">
+        Vazhdo te porosia (demo)
+      </button>
+      <p class="cart-note">
+        Ky proces shërben vetëm si simulim në anën e klientit – të dhënat nuk ruhen në server.
+      </p>
+    </div>
+  </aside>
+  <div id="cart-overlay" class="cart-overlay"></div>
+
+  <main class="container products-page">
+    <header class="page-header">
+      <h1>Katalogu i laptopëve</h1>
+      <p>
+        Përdor filtrat më poshtë për të gjetur shpejt modelin që i përshtatet më së miri mënyrës suaj të punës
+        apo lojërave që luani.
+      </p>
+    </header>
+
+    <section class="filters">
+      <h2>Filtra</h2>
+      <form id="filter-form" class="filter-grid">
+        <div class="form-field">
+          <label for="filter-brand">Marka</label>
+          <select id="filter-brand" name="brand">
+            <option value="">Të gjitha</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="filter-segment">Segmenti</label>
+          <select id="filter-segment" name="segment">
+            <option value="">Të gjithë</option>
+            <option value="student">Student</option>
+            <option value="biznes">Biznes</option>
+            <option value="gaming">Gaming</option>
+          </select>
+        </div>
+                <div class="form-field">
+          <label for="filter-max-price">Çmimi maksimal (€)</label>
+          <input type="number" id="filter-max-price" min="0" step="50" placeholder="p.sh. 1200">
+        </div>
+        <div class="form-field">
+          <label for="filter-search">Kërko (model, CPU, GPU)</label>
+          <input type="text" id="filter-search" placeholder="p.sh. Ryzen, RTX 4060">
+        </div>
+        <div class="filter-actions">
+          <button type="submit" class="btn-primary">Apliko filtrat</button>
+        </div>
+      </form>
+
+      <div class="filter-stats">
+        <p id="filter-count">Po shfaqen 0 produkte.</p>
+        <p id="filter-average">Çmimi mesatar: 0 €</p>
+      </div>
+    </section>
+
+    
+
+    <section id="products-cards" class="products-grid" aria-label="Lista e laptopëve si karta">
+      <!-- Gjenerohet dinamkisht nga JavaScript -->
+    </section>
+
+    <section id="products-table-wrapper" class="products-table-wrapper" aria-label="Tabela e laptopëve">
+      <table id="products-table">
+        <thead>
+          <tr>
+            <th>Marka</th>
+            <th>Modeli</th>
+            <th>CPU</th>
+            <th>RAM</th>
+            <th>Memoria</th>
+            <th>GPU</th>
+            <th>Segmenti</th>
+            <th>Çmimi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Gjenerohet dinamkisht nga JavaScript -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="footer-year"></span> NovaLaptops.</p>
+      
+    </div>
+  </footer>
+</body>
+</html>
