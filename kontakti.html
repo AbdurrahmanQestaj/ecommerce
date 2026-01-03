@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontakti - NovaLaptops</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+<body class="page-kontakti">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="NovaLaptops logo">
+        <span>NovaLaptops</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Ballina</a>
+        <a href="produktet.html">Laptopët</a>
+        <a href="sherbimet.html">Shërbimet</a>
+        <a href="rreth-nesh.html">Rreth nesh</a>
+        <a href="kontakti.html" class="active">Kontakti</a>
+      </nav>
+      <button id="cart-toggle" class="cart-btn" type="button">
+        🛒 <span id="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <aside id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+      <h2>Shporta juaj</h2>
+      <button id="cart-close" type="button">×</button>
+    </div>
+    <div id="cart-items" class="cart-items">
+      <p class="cart-empty">Shporta është bosh për momentin.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total-line">
+        <span>Totali:</span>
+        <span id="cart-total">0 €</span>
+      </div>
+      <button id="checkout-btn" type="button" class="btn-primary">
+        Vazhdo te porosia (demo)
+      </button>
+      <p class="cart-note">
+        Ky proces shërben vetëm si simulim në anën e klientit – të dhënat nuk ruhen në server.
+      </p>
+    </div>
+  </aside>
+  <div id="cart-overlay" class="cart-overlay"></div>
+
+  <main class="container page-content">
+    <header class="page-header">
+      <h1>Na kontaktoni</h1>
+      <p>
+        Plotësoni formularin më poshtë dhe ekipi ynë do t’ju kontaktojë me sugjerime konkrete
+        për laptopin që i përshtatet më së miri nevojave tuaja.
+      </p>
+    </header>
+
+    <section class="contact-section">
+      <form id="contact-form" novalidate>
+        <div class="form-field">
+          <label for="full-name">Emri dhe mbiemri</label>
+          <input type="text" id="full-name" name="full-name" required>
+          <span class="error-message" data-for="full-name"></span>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          <span class="error-message" data-for="email"></span>
+        </div>
+
+        <div class="form-field">
+          <label for="phone">Numri i telefonit</label>
+          <input type="tel" id="phone" name="phone" required>
+          <span class="error-message" data-for="phone"></span>
+        </div>
+
+        <div class="form-field">
+          <label for="topic">Tema</label>
+          <select id="topic" name="topic" required>
+            <option value="">Zgjedhni një temë</option>
+            <option value="student">Këshillim për student</option>
+            <option value="biznes">Oferta për kompani</option>
+            <option value="gaming">Konfigurim gaming</option>
+            <option value="tjeter">Pyetje të tjera</option>
+          </select>
+          <span class="error-message" data-for="topic"></span>
+        </div>
+
+        <div class="form-field">
+          <label for="message">Mesazhi</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <span class="error-message" data-for="message"></span>
+        </div>
+
+        <div class="form-field">
+          <label for="preferred-date">Data e preferuar për kontakt</label>
+          <input type="date" id="preferred-date" name="preferred-date" required>
+          <span class="error-message" data-for="preferred-date"></span>
+        </div>
+
+        <button type="submit" class="btn-primary">Dërgo mesazhin</button>
+        <p id="contact-success" class="success-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="footer-year"></span> NovaLaptops.</p>
+    </div>
+  </footer>
+</body>
+</html>
