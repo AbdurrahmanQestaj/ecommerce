@@ -1,0 +1,108 @@
+/* Tabela + gride informative - Shuajb Bytyqi */
+
+/* Tabela e produkteve */
+.products-table-wrapper {
+  margin-top: 1.1rem;
+  background: var(--bg-elevated);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  padding: 0.1rem 0.1rem 0.4rem;
+  overflow-x: auto;
+  display: block;
+}
+
+#products-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+#products-table thead {
+  background: rgba(15, 23, 42, 0.9);
+}
+
+#products-table th,
+#products-table td {
+  padding: 0.55rem 0.6rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(31, 41, 55, 0.7);
+}
+
+#products-table th {
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+#products-table tr:nth-child(even) {
+  background: rgba(15, 23, 42, 0.55);
+}
+
+/* Pages informative */
+.page-content {
+  padding: 2rem 0 2.8rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.4rem;
+}
+
+.service-card {
+  background: var(--bg-elevated);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  padding: 1rem 1.1rem 1.1rem;
+}
+
+.service-card h2 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+}
+
+.service-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.service-card ul {
+  margin-top: 0.4rem;
+  padding-left: 1.2rem;
+  font-size: 0.84rem;
+}
+
+.process-section {
+  margin-top: 1.8rem;
+}
+
+.process-steps {
+  margin-top: 0.6rem;
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.about-grid {
+  margin-top: 1.3rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.about-grid article {
+  background: var(--bg-elevated);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  padding: 1rem 1.1rem 1.1rem;
+}
+
+.about-values {
+  margin-top: 1.6rem;
+}
+
+.values-list {
+  padding-left: 1.1rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
