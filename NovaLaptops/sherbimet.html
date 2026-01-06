@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <title>Shërbimet - NovaLaptops</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+<body class="page-sherbimet">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="NovaLaptops logo">
+        <span>NovaLaptops</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Ballina</a>
+        <a href="produktet.html">Laptopët</a>
+        <a href="sherbimet.html" class="active">Shërbimet</a>
+        <a href="rreth-nesh.html">Rreth nesh</a>
+        <a href="kontakti.html">Kontakti</a>
+      </nav>
+      <button id="cart-toggle" class="cart-btn" type="button">
+        🛒 <span id="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <aside id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+      <h2>Shporta juaj</h2>
+      <button id="cart-close" type="button">×</button>
+    </div>
+    <div id="cart-items" class="cart-items">
+      <p class="cart-empty">Shporta është bosh për momentin.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total-line">
+        <span>Totali:</span>
+        <span id="cart-total">0 €</span>
+      </div>
+      <button id="checkout-btn" type="button" class="btn-primary">
+        Vazhdo te porosia (demo)
+      </button>
+      <p class="cart-note">
+        Ky proces shërben vetëm si simulim në anën e klientit – të dhënat nuk ruhen në server.
+      </p>
+    </div>
+  </aside>
+  <div id="cart-overlay" class="cart-overlay"></div>
+
+  <main class="container page-content">
+    <header class="page-header">
+      <h1>Shërbimet tona para dhe pas shitjes</h1>
+      <p>
+        NovaLaptops nuk është vetëm dyqan pajisjesh; është ekip i specializuar që kujdeset për të gjithë
+        ciklin e pajisjes suaj – nga analiza e nevojave deri te përditësimet e ardhshme.
+      </p>
+    </header>
+
+    <section class="services-grid">
+      <article class="service-card">
+        <h2>Këshillim për studentë</h2>
+        <p>
+          Studentët kanë buxhet të kufizuar, por nevoja reale për stabilitet. Konsulentët tanë analizojnë
+          lëndët, softuerët dhe mënyrën e studimit për të sugjeruar kombinimin më të mirë çmim/performance.
+        </p>
+        <ul>
+          <li>Analizë e mjeteve: Office, AutoCAD, IDE, mjete vizualizimi</li>
+          <li>Optimizim baterie dhe transportueshmërie</li>
+          <li>Paketë studenti me raste dhe aksesorë bazikë</li>
+        </ul>
+      </article>
+
+      <article class="service-card">
+        <h2>Paketa biznesi</h2>
+        <p>
+          Për kompanitë ofrojmë konfigurime standarde për role të ndryshme – menaxhim, financa, zhvillim –
+          dhe sigurojmë që IT juaj të ketë kontroll të plotë mbi flotën e laptopëve.
+        </p>
+        <ul>
+          <li>Instalim i sistemit operativ dhe aplikacioneve të punës</li>
+          <li>Konfigurim VPN, enkriptim disku dhe politika sigurie</li>
+          <li>Raport periodik për statusin e pajisjeve</li>
+        </ul>
+      </article>
+
+      <article class="service-card">
+        <h2>Setup për gaming</h2>
+        <p>
+          Për lojtarët fokusimi është në FPS, temperaturë dhe stabilitet gjatë stream-it. Ne testojmë
+          konfigurimin në lojëra reale para dorëzimit.
+        </p>
+        <ul>
+          <li>Instalim i lojërave kryesore dhe optimizim grafik</li>
+          <li>Konfigurim i profileve të ftohjes dhe RGB</li>
+          <li>Këshillim për aksesorë (maus, tastierë, headset)</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="process-section">
+      <h2>Si funksionon procesi ynë</h2>
+      <ol class="process-steps">
+        <li><strong>Analiza e profilit:</strong> Përdorim një formular të thjeshtë online për të mbledhur të dhënat kryesore.</li>
+        <li><strong>Përzgjedhja e konfigurimeve:</strong> Sistemi ynë i ndërtuar me HTML, CSS dhe JavaScript
+          filtron katalogun sipas kërkesave tuaja.</li>
+        <li><strong>Konsultim i shpejtë:</strong> Përmes emailit apo telefonit konfirmojmë zgjedhjen finale.</li>
+        <li><strong>Dorëzimi dhe instalimi:</strong> E sjellim pajisjen gati për përdorim, me të gjitha aplikacionet e nevojshme.</li>
+        <li><strong>Mbështetje afatgjatë:</strong> Përmes platformës sonë të ndërtuar me jQuery dhe React ofrojmë
+          guida dhe përditësime.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="footer-year"></span> NovaLaptops.</p>
+    </div>
+  </footer>
+</body>
+</html>

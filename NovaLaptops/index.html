@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <title>NovaLaptops - Dyqan modern laptopësh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+<body class="page-index">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="NovaLaptops logo">
+        <span>NovaLaptops</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="active">Ballina</a>
+        <a href="produktet.html">Laptopët</a>
+        <a href="sherbimet.html">Shërbimet</a>
+        <a href="rreth-nesh.html">Rreth nesh</a>
+        <a href="kontakti.html">Kontakti</a>
+      </nav>
+      <button id="cart-toggle" class="cart-btn" type="button">
+        🛒 <span id="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <aside id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+      <h2>Shporta juaj</h2>
+      <button id="cart-close" type="button">×</button>
+    </div>
+    <div id="cart-items" class="cart-items">
+      <p class="cart-empty">Shporta është bosh për momentin.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total-line">
+        <span>Totali:</span>
+        <span id="cart-total">0 €</span>
+      </div>
+      <button id="checkout-btn" type="button" class="btn-primary">
+        Vazhdo te porosia (demo)
+      </button>
+      <p class="cart-note">
+        Ky proces shërben vetëm si simulim në anën e klientit – të dhënat nuk ruhen në server.
+      </p>
+    </div>
+  </aside>
+  <div id="cart-overlay" class="cart-overlay"></div>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Gjej laptopin ideal për studim, biznes ose gaming.</h1>
+          <p>
+            NovaLaptops sjell vetëm modele të përzgjedhura me kujdes, të optimizuara për
+            produktivitet, kreativitet dhe lojëra moderne.
+          </p>
+          <div class="hero-actions">
+            <a href="produktet.html" class="btn-primary hero-cta">Shfleto laptopët</a>
+            <a href="#segmentet" class="btn-secondary">Shiko segmentet</a>
+          </div>
+          <p class="hero-note">
+            Çmimet përditësohen rregullisht sipas tregut evropian dhe ofertave sezonale.
+          </p>
+        </div>
+        <div class="hero-highlight">
+          <h2>Oferta e javës</h2>
+          <p id="offer-text">Po ngarkohet oferta...</p>
+          <p id="offer-dates" class="offer-dates"></p>
+          <a href="produktet.html" class="btn-ghost small">Shiko modelin në katalog</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="segmentet" class="segments">
+      <div class="container">
+        <h2>Segmentet tona kryesore</h2>
+        <p class="section-intro">
+          Çdo kategori ka specifika të ndryshme teknike dhe buxhetore. Ne i kemi strukturuar në
+          mënyrë që zgjedhja të jetë e qartë edhe për klientët jo-teknikë.
+        </p>
+        <div class="segment-grid">
+          <article class="segment-card">
+            <img src="img/Laptop per studente.jpeg" alt="Laptop studentor">
+            <h3>Student</h3>
+            <p>
+              Laptopë të lehtë, bateri afatgjatë dhe çmim i arsyeshëm për detyra, prezantime dhe mësim online.
+            </p>
+            <ul>
+              <li>Ekran komod për lexim të gjatë</li>
+              <li>SSD i shpejtë për hapje të menjëhershme</li>
+              <li>Garanci e zgjatur për përdorim intensiv</li>
+            </ul>
+          </article>
+
+          <article class="segment-card">
+            <img src="img/foto per biznis.jpg" alt="Laptop për biznes">
+            <h3>Biznes</h3>
+            <p>
+              Platformë e sigurt për punë në distancë, prezantime profesionale dhe aplikacione të biznesit.
+            </p>
+            <ul>
+              <li>Procesorë efikas për multitasking</li>
+              <li>Enkriptim dhe funksione sigurie</li>
+              <li>Mbështetje onsite për kompani</li>
+            </ul>
+          </article>
+
+          <article class="segment-card">
+            <img src="img/foto per gaming.jpg" alt="Laptop gaming" width="275px">
+            <h3>Gaming</h3>
+            <p>
+              FPS i lartë, ekran me frekuencë të shpejtë dhe ftohje e optimizuar për sesione të gjata loje.
+            </p>
+            <ul>
+              <li>GPU dedikuar NVIDIA/AMD</li>
+              <li>RAM i bollshëm për lojëra moderne</li>
+              <li>Tastierë me ndriçim RGB</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-us">
+      <div class="container">
+        <h2>Pse të zgjedhësh NovaLaptops?</h2>
+        <div class="why-grid">
+          <article>
+            <h3>Këshillim i sinqertë teknik</h3>
+            <p>
+              Para se të sugjerojmë një model, analizojmë mënyrën tuaj të punës dhe aplikacionet që përdorni,
+              në mënyrë që të mos paguani për specifika që nuk ju nevojiten.
+            </p>
+          </article>
+          <article>
+            <h3>Proces i thjeshtë zgjedhjeje</h3>
+            <p>
+              Filtrat tanë inteligjentë ju lejojnë të filtroni sipas segmentit, buxhetit dhe përdorimit.
+              Të gjitha bëhen në anën e klientit me HTML, CSS, JavaScript dhe jQuery për një përvojë të rrjedhshme.
+            </p>
+          </article>
+          <article>
+            <h3>Garanci dhe përditësim</h3>
+            <p>
+              Pas blerjes, ofrojmë instalim, konfigurim dhe asistencë në distancë. Për klientët gaming dhe biznes,
+              mundësojmë plane për përditësim të pajisjeve.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="footer-year"></span> NovaLaptops. Të gjitha të drejtat e rezervuara.</p>
+      <p class="footer-note">
+        Ndërtuar me HTML5, CSS3, JavaScript, jQuery dhe një faqe të veçantë React për katalogun interaktiv.
+      </p>
+      
+      
+    </div>
+  </footer>
+</body>
+</html>

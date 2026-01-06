@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <title>Rreth NovaLaptops</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+<body class="page-rreth">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="NovaLaptops logo">
+        <span>NovaLaptops</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Ballina</a>
+        <a href="produktet.html">Laptopët</a>
+        <a href="sherbimet.html">Shërbimet</a>
+        <a href="rreth-nesh.html" class="active">Rreth nesh</a>
+        <a href="kontakti.html">Kontakti</a>
+      </nav>
+      <button id="cart-toggle" class="cart-btn" type="button">
+        🛒 <span id="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <aside id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+      <h2>Shporta juaj</h2>
+      <button id="cart-close" type="button">×</button>
+    </div>
+    <div id="cart-items" class="cart-items">
+      <p class="cart-empty">Shporta është bosh për momentin.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total-line">
+        <span>Totali:</span>
+        <span id="cart-total">0 €</span>
+      </div>
+      <button id="checkout-btn" type="button" class="btn-primary">
+        Vazhdo te porosia (demo)
+      </button>
+      <p class="cart-note">
+        Ky proces shërben vetëm si simulim në anën e klientit – të dhënat nuk ruhen në server.
+      </p>
+    </div>
+  </aside>
+  <div id="cart-overlay" class="cart-overlay"></div>
+
+  <main class="container page-content">
+    <header class="page-header">
+      <h1>Kush është NovaLaptops?</h1>
+      <p>
+        NovaLaptops është një ekip i vogël inxhinierësh dhe konsulentësh që kombinon njohuritë teknike
+        me përvojën reale të përdoruesve për të ndërtuar një eksperiencë moderne blerjeje laptopësh.
+      </p>
+    </header>
+
+    <section class="about-grid">
+      <article>
+        <h2>Fokus në klient</h2>
+        <p>
+          Ne ndjekim mënyrën se si klientët tanë përdorin pajisjet çdo ditë dhe përditësojmë katalogun në
+          bazë të feedback-ut. Çdo konfigurim që shihni këtu është testuar në skenarë realë pune.
+        </p>
+      </article>
+      <article>
+        <h2>Teknologjia në prapaskenë</h2>
+        <p>
+          Platforma jonë përbëhet nga faqe të strukturuara me HTML5 dhe CSS3, funksionalitete dinamike në
+          JavaScript dhe jQuery, si dhe një faqe e veçantë React për katalogun interaktiv të laptopëve.
+          Kjo qasje na lejon të provojmë shpejt ide të reja pa sakrifikuar stabilitetin.
+        </p>
+      </article>
+      <article>
+        <h2>Segmentet që mbulojmë</h2>
+        <p>
+          Aktualisht fokusohemi në tre segmente kryesore: studentë që fillojnë ose vazhdojnë studimet,
+          profesionistë të biznesit që udhëtojnë shpesh dhe lojtarë që kërkojnë performancë maksimale.
+        </p>
+      </article>
+    </section>
+
+    <section class="about-values">
+      <h2>Vlerat tona kryesore</h2>
+      <ul class="values-list">
+        <li>Transparencë në specifika dhe çmime</li>
+        <li>Balancë mes performancës dhe buxhetit</li>
+        <li>Mbështetje afatgjatë pas blerjes</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="footer-year"></span> NovaLaptops.</p>
+    </div>
+  </footer>
+</body>
+</html>
